@@ -1,1 +1,10 @@
 /* inspired by https://uicolorpicker.com/ */
+
+@font-face {
+    font-family: M_Plus_Code_Latin;
+    src: url("F:\My Programs\Personal projects\UI-Colour-Combination-Finder\Fonts\M_Plus_Code_latin\static\MPLUSCodeLatin\MPLUSCodeLatin-Regular.ttf");
+}
+.Website_Title{
+    font-family: M_Plus_Code_Latin ;
+    
+}

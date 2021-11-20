@@ -32,8 +32,14 @@
 // }
 
 // for more colors, visit : http://khroma.co/train/
+// pickedColors = ["#e6e6fa", "#f5f5dc", "#000000", "#00ffff", "#36454f", "#7DDDf4", "#f2f2f4", "#1ee1b4", "#f76b69", "#dbb7f9", "#c5c1d4", "#A59caf", "#eddcc3", "#5d6175", "#b9f8cd", "#dceded", "#fadfcc", "#b87efa", "#fb4130", "#c4c2d0"]
 
-var AccentColour = document.getElementById("AccentColour")
-console.log(AccentColour)
 
-pickedColors = ["#e6e6fa", "#f5f5dc", "#000000", "#00ffff", "#36454f", "#7DDDf4", "#f2f2f4", "#1ee1b4", "#f76b69", "#dbb7f9", "#c5c1d4", "#A59caf", "#eddcc3", "#5d6175", "#b9f8cd", "#dceded", "#fadfcc", "#b87efa", "#fb4130", "#c4c2d0"]
+let BackgroundColourInput = document.querySelector('#BackgroundColour')  // https://www.youtube.com/watch?v=eIw-Nou9L9E
+let BackgroundColourHexInput = document.querySelector('#BackgroundColourHex')
+
+BackgroundColourInput.addEventListener('input', () =>{
+    let color = BackgroundColourInput.value
+    BackgroundColourHexInput.value = color
+    document.body.style.backgroundColor = color
+})
